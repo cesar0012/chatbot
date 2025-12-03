@@ -1,7 +1,18 @@
-# Habilitar logging de errores PHP para debugging
-php_flag log_errors on
-php_value error_log "error.log"
-php_flag display_errors off
+# Permitir peticiones POST de Evolution API
+<Files "webhook_whatsapp.php">
+    # Desactivar ModSecurity para este archivo
+    <IfModule mod_security.c>
+        SecRuleEngine Off
+    </IfModule>
+    
+    # Permitir acceso desde cualquier origen
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "POST, GET, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type, Authorization, apikey"
+</Files>
 
-# Configuración adicional
-RewriteEngine On
+# Permitir archivos PHP de diagnóstico
+<FilesMatch "\.(php)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
