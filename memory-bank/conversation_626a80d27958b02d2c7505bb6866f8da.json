@@ -1,0 +1,34 @@
+{
+    "messages": [
+        {
+            "role": "user",
+            "content": "dime una cita",
+            "timestamp": 1749281856
+        },
+        {
+            "role": "assistant",
+            "content": "\u00a1Hola! Tu informaci\u00f3n:\n- IP: 65.99.205.160\n- Navegador: {{api_response_json.headers.User-Agent}}\n- Servidor consultado: httpbin.org",
+            "timestamp": 1749281856
+        },
+        {
+            "role": "user",
+            "content": "dime una cita",
+            "timestamp": 1749282031
+        },
+        {
+            "role": "assistant",
+            "content": "\u00a1Hola! Tu informaci\u00f3n:\n- IP: 65.99.205.160\n- Navegador: {{api_response_json.headers.User-Agent}}\n- Servidor consultado: httpbin.org",
+            "timestamp": 1749282032
+        },
+        {
+            "role": "user",
+            "content": "dime una cita",
+            "timestamp": 1749282117
+        },
+        {
+            "role": "assistant",
+            "content": "\u00a1Hola! Tu informaci\u00f3n:\n- IP: 65.99.205.160\n- Navegador: {{api_response_json.headers.User-Agent}}\n- Servidor consultado: httpbin.org",
+            "timestamp": 1749282117
+        }
+    ]
+}

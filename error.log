@@ -1,0 +1,23 @@
+[07-Jun-2025 07:41:57 UTC] Processing variables in text: ¡Hola! Tu información:
+- IP: {{api_response_json.origin}}
+- Navegador: {{api_response_json.headers.User-Agent}}
+- Servidor consultado: {{api_response_json.headers.Host}}
+[07-Jun-2025 07:41:57 UTC] Available variables: {"quote_data":"{\n  \"args\": {}, \n  \"headers\": {\n    \"Accept\": \"*\/*\", \n    \"Host\": \"httpbin.org\", \n    \"X-Amzn-Trace-Id\": \"Root=1-6843e78f-332945aa5d84c86017da4916\"\n  }, \n  \"origin\": \"65.99.205.160\", \n  \"url\": \"https:\/\/httpbin.org\/get\"\n}\n","quote_data_json":{"args":[],"headers":{"Accept":"*\/*","Host":"httpbin.org","X-Amzn-Trace-Id":"Root=1-6843e78f-332945aa5d84c86017da4916"},"origin":"65.99.205.160","url":"https:\/\/httpbin.org\/get"},"api_response_json":"{\n  \"args\": {}, \n  \"headers\": {\n    \"Accept\": \"*\/*\", \n    \"Host\": \"httpbin.org\", \n    \"X-Amzn-Trace-Id\": \"Root=1-6843ecf0-736463a42b3659404ed55bb5\"\n  }, \n  \"origin\": \"65.99.205.160\", \n  \"url\": \"https:\/\/httpbin.org\/get\"\n}\n","api_response_json_json":{"args":[],"headers":{"Accept":"*\/*","Host":"httpbin.org","X-Amzn-Trace-Id":"Root=1-6843ecf0-736463a42b3659404ed55bb5"},"origin":"65.99.205.160","url":"https:\/\/httpbin.org\/get"}}
+[07-Jun-2025 07:41:57 UTC] [DEBUG] Looking for part: 'origin' in value type: array
+[07-Jun-2025 07:41:57 UTC] [DEBUG] Available keys: ["args","headers","origin","url"]
+[07-Jun-2025 07:41:57 UTC] [DEBUG] Found value: 65.99.205.160
+[07-Jun-2025 07:41:57 UTC] Variable 'api_response_json.origin' resolved to: 65.99.205.160
+[07-Jun-2025 07:41:57 UTC] [DEBUG] Looking for part: 'headers' in value type: array
+[07-Jun-2025 07:41:57 UTC] [DEBUG] Available keys: ["args","headers","origin","url"]
+[07-Jun-2025 07:41:57 UTC] [DEBUG] Found value: {"Accept":"*\/*","Host":"httpbin.org","X-Amzn-Trace-Id":"Root=1-6843ecf0-736463a42b3659404ed55bb5"}
+[07-Jun-2025 07:41:57 UTC] [DEBUG] Looking for part: 'User-Agent' in value type: array
+[07-Jun-2025 07:41:57 UTC] [DEBUG] Available keys: ["Accept","Host","X-Amzn-Trace-Id"]
+[07-Jun-2025 07:41:57 UTC] [DEBUG] Part 'User-Agent' not found in array
+[07-Jun-2025 07:41:57 UTC] Variable 'api_response_json.headers.User-Agent' resolved to: {{api_response_json.headers.User-Agent}}
+[07-Jun-2025 07:41:57 UTC] [DEBUG] Looking for part: 'headers' in value type: array
+[07-Jun-2025 07:41:57 UTC] [DEBUG] Available keys: ["args","headers","origin","url"]
+[07-Jun-2025 07:41:57 UTC] [DEBUG] Found value: {"Accept":"*\/*","Host":"httpbin.org","X-Amzn-Trace-Id":"Root=1-6843ecf0-736463a42b3659404ed55bb5"}
+[07-Jun-2025 07:41:57 UTC] [DEBUG] Looking for part: 'Host' in value type: array
+[07-Jun-2025 07:41:57 UTC] [DEBUG] Available keys: ["Accept","Host","X-Amzn-Trace-Id"]
+[07-Jun-2025 07:41:57 UTC] [DEBUG] Found value: httpbin.org
+[07-Jun-2025 07:41:57 UTC] Variable 'api_response_json.headers.Host' resolved to: httpbin.org

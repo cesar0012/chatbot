@@ -1,0 +1,2454 @@
+[2025-05-31 06:52:35] === NUEVA EVALUACIÓN CON IA ===
+[2025-05-31 06:52:35] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-05-31 06:52:35] Mensaje del usuario: 'hola como estas?'
+[2025-05-31 06:52:35] Prompt enviado a Gemini:
+[2025-05-31 06:52:35] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: hola como estas?
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-05-31 06:52:35] Enviando petición a Gemini...
+[2025-05-31 06:52:35] Respuesta HTTP Code: 200
+[2025-05-31 06:52:35] Respuesta completa de Gemini:
+[2025-05-31 06:52:35] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -4.172499757260084e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 64,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 66,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 64
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "M6c6aKztG7yqnvgP7vyi0Qg"
+}
+[2025-05-31 06:52:35] Respuesta de la IA (original): 'false
+'
+[2025-05-31 06:52:35] Respuesta de la IA (procesada): 'false'
+[2025-05-31 06:52:35] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-05-31 06:52:35] === FIN DE EVALUACIÓN ===
+[2025-05-31 06:52:35] 
+[2025-05-31 06:52:54] === NUEVA EVALUACIÓN CON IA ===
+[2025-05-31 06:52:54] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-05-31 06:52:54] Mensaje del usuario: 'estoy muy molesto con el servicio'
+[2025-05-31 06:52:54] Prompt enviado a Gemini:
+[2025-05-31 06:52:54] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: estoy muy molesto con el servicio
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-05-31 06:52:54] Enviando petición a Gemini...
+[2025-05-31 06:52:54] Respuesta HTTP Code: 200
+[2025-05-31 06:52:54] Respuesta completa de Gemini:
+[2025-05-31 06:52:54] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "true\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -4.1722668697730114e-7
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 67,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 69,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 67
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "Rqc6aOXOD_-bm9IP6vzQ6Ag"
+}
+[2025-05-31 06:52:54] Respuesta de la IA (original): 'true
+'
+[2025-05-31 06:52:54] Respuesta de la IA (procesada): 'true'
+[2025-05-31 06:52:54] RESULTADO FINAL: TRUE (condición se cumple)
+[2025-05-31 06:52:54] === FIN DE EVALUACIÓN ===
+[2025-05-31 06:52:54] 
+[2025-05-31 06:54:03] === NUEVA EVALUACIÓN CON IA ===
+[2025-05-31 06:54:03] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-05-31 06:54:03] Mensaje del usuario: 'hola que tal'
+[2025-05-31 06:54:03] Prompt enviado a Gemini:
+[2025-05-31 06:54:03] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: hola que tal
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-05-31 06:54:03] Enviando petición a Gemini...
+[2025-05-31 06:54:03] Respuesta HTTP Code: 200
+[2025-05-31 06:54:03] Respuesta completa de Gemini:
+[2025-05-31 06:54:03] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -2.9204106795077678e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 63,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 65,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 63
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "i6c6aKC_B9WLmecPzZeogQw"
+}
+[2025-05-31 06:54:03] Respuesta de la IA (original): 'false
+'
+[2025-05-31 06:54:03] Respuesta de la IA (procesada): 'false'
+[2025-05-31 06:54:03] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-05-31 06:54:03] === FIN DE EVALUACIÓN ===
+[2025-05-31 06:54:03] 
+[2025-05-31 06:54:24] === NUEVA EVALUACIÓN CON IA ===
+[2025-05-31 06:54:24] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-05-31 06:54:24] Mensaje del usuario: 'cuantomtiempo tarda un envio?'
+[2025-05-31 06:54:24] Prompt enviado a Gemini:
+[2025-05-31 06:54:24] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: cuantomtiempo tarda un envio?
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-05-31 06:54:24] Enviando petición a Gemini...
+[2025-05-31 06:54:24] Respuesta HTTP Code: 200
+[2025-05-31 06:54:24] Respuesta completa de Gemini:
+[2025-05-31 06:54:24] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -3.993824066128582e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 67,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 69,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 67
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "oKc6aO20IsT22PgP2-Cw0Ac"
+}
+[2025-05-31 06:54:24] Respuesta de la IA (original): 'false
+'
+[2025-05-31 06:54:24] Respuesta de la IA (procesada): 'false'
+[2025-05-31 06:54:24] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-05-31 06:54:24] === FIN DE EVALUACIÓN ===
+[2025-05-31 06:54:24] 
+[2025-05-31 06:55:17] === NUEVA EVALUACIÓN CON IA ===
+[2025-05-31 06:55:17] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-05-31 06:55:17] Mensaje del usuario: 'la vez anterior mi producto llego en mal estado'
+[2025-05-31 06:55:17] Prompt enviado a Gemini:
+[2025-05-31 06:55:17] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: la vez anterior mi producto llego en mal estado
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-05-31 06:55:17] Enviando petición a Gemini...
+[2025-05-31 06:55:17] Respuesta HTTP Code: 200
+[2025-05-31 06:55:17] Respuesta completa de Gemini:
+[2025-05-31 06:55:17] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "true\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -5.960258704362786e-7
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 69,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 71,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 69
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "1ac6aKDCC6n4ld8P5PX2mAw"
+}
+[2025-05-31 06:55:17] Respuesta de la IA (original): 'true
+'
+[2025-05-31 06:55:17] Respuesta de la IA (procesada): 'true'
+[2025-05-31 06:55:17] RESULTADO FINAL: TRUE (condición se cumple)
+[2025-05-31 06:55:17] === FIN DE EVALUACIÓN ===
+[2025-05-31 06:55:17] 
+[2025-05-31 06:57:10] === NUEVA EVALUACIÓN CON IA ===
+[2025-05-31 06:57:10] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-05-31 06:57:10] Mensaje del usuario: 'hola'
+[2025-05-31 06:57:10] Prompt enviado a Gemini:
+[2025-05-31 06:57:10] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: hola
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-05-31 06:57:10] Enviando petición a Gemini...
+[2025-05-31 06:57:11] Respuesta HTTP Code: 200
+[2025-05-31 06:57:11] Respuesta completa de Gemini:
+[2025-05-31 06:57:11] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -5.2448503993218765e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 61,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 63,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 61
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "Rqg6aIaZMfjqld8PpP6_qAk"
+}
+[2025-05-31 06:57:11] Respuesta de la IA (original): 'false
+'
+[2025-05-31 06:57:11] Respuesta de la IA (procesada): 'false'
+[2025-05-31 06:57:11] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-05-31 06:57:11] === FIN DE EVALUACIÓN ===
+[2025-05-31 06:57:11] 
+[2025-06-07 05:47:14] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 05:47:14] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 05:47:14] Mensaje del usuario: 'hola como estas'
+[2025-06-07 05:47:14] Prompt enviado a Gemini:
+[2025-06-07 05:47:14] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: hola como estas
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 05:47:14] Enviando petición a Gemini...
+[2025-06-07 05:47:15] Respuesta HTTP Code: 200
+[2025-06-07 05:47:15] Respuesta completa de Gemini:
+[2025-06-07 05:47:15] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -3.278097210568376e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 63,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 65,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 63
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "Y9JDaIaGAaG7ld8PpbbF0A4"
+}
+[2025-06-07 05:47:15] Respuesta de la IA (original): 'false
+'
+[2025-06-07 05:47:15] Respuesta de la IA (procesada): 'false'
+[2025-06-07 05:47:15] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 05:47:15] === FIN DE EVALUACIÓN ===
+[2025-06-07 05:47:15] 
+[2025-06-07 05:47:26] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 05:47:26] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 05:47:26] Mensaje del usuario: 'agente'
+[2025-06-07 05:47:26] Prompt enviado a Gemini:
+[2025-06-07 05:47:26] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: agente
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 05:47:26] Enviando petición a Gemini...
+[2025-06-07 05:47:26] Respuesta HTTP Code: 200
+[2025-06-07 05:47:26] Respuesta completa de Gemini:
+[2025-06-07 05:47:26] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -1.4782167454541195e-5
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 61,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 63,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 61
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "btJDaLDXEtaUmecPgtbdoQY"
+}
+[2025-06-07 05:47:26] Respuesta de la IA (original): 'false
+'
+[2025-06-07 05:47:26] Respuesta de la IA (procesada): 'false'
+[2025-06-07 05:47:26] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 05:47:26] === FIN DE EVALUACIÓN ===
+[2025-06-07 05:47:26] 
+[2025-06-07 06:57:20] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 06:57:20] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 06:57:20] Mensaje del usuario: 'hola que tal'
+[2025-06-07 06:57:20] Prompt enviado a Gemini:
+[2025-06-07 06:57:20] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: hola que tal
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 06:57:20] Enviando petición a Gemini...
+[2025-06-07 06:57:20] Respuesta HTTP Code: 200
+[2025-06-07 06:57:20] Respuesta completa de Gemini:
+[2025-06-07 06:57:20] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -2.9204106795077678e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 63,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 65,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 63
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "0OJDaJT6FoqCsbQPhYjU2Qc"
+}
+[2025-06-07 06:57:20] Respuesta de la IA (original): 'false
+'
+[2025-06-07 06:57:20] Respuesta de la IA (procesada): 'false'
+[2025-06-07 06:57:20] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 06:57:20] === FIN DE EVALUACIÓN ===
+[2025-06-07 06:57:20] 
+[2025-06-07 06:57:31] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 06:57:31] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 06:57:31] Mensaje del usuario: 'por favor dime el clima'
+[2025-06-07 06:57:31] Prompt enviado a Gemini:
+[2025-06-07 06:57:31] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: por favor dime el clima
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 06:57:31] Enviando petición a Gemini...
+[2025-06-07 06:57:31] Respuesta HTTP Code: 200
+[2025-06-07 06:57:31] Respuesta completa de Gemini:
+[2025-06-07 06:57:31] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -2.8012070742988726e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 65,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 67,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 65
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "2-JDaIHNKt2XmecP-4jU4AY"
+}
+[2025-06-07 06:57:31] Respuesta de la IA (original): 'false
+'
+[2025-06-07 06:57:31] Respuesta de la IA (procesada): 'false'
+[2025-06-07 06:57:31] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 06:57:31] === FIN DE EVALUACIÓN ===
+[2025-06-07 06:57:31] 
+[2025-06-07 07:05:53] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:05:53] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:05:53] Mensaje del usuario: 'como estas'
+[2025-06-07 07:05:53] Prompt enviado a Gemini:
+[2025-06-07 07:05:53] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: como estas
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:05:53] Enviando petición a Gemini...
+[2025-06-07 07:05:53] Respuesta HTTP Code: 200
+[2025-06-07 07:05:53] Respuesta completa de Gemini:
+[2025-06-07 07:05:53] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -6.0792540352849755e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 62,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 64,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 62
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "0eRDaMGrI_yXmecP7ISugQs"
+}
+[2025-06-07 07:05:53] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:05:53] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:05:53] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:05:53] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:05:53] 
+[2025-06-07 07:06:06] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:06:06] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:06:06] Mensaje del usuario: 'por favor dime una cita'
+[2025-06-07 07:06:06] Prompt enviado a Gemini:
+[2025-06-07 07:06:06] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: por favor dime una cita
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:06:06] Enviando petición a Gemini...
+[2025-06-07 07:06:06] Respuesta HTTP Code: 200
+[2025-06-07 07:06:06] Respuesta completa de Gemini:
+[2025-06-07 07:06:06] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -3.815162926912308e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 65,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 67,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 65
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "3uRDaLfCErGdmecPvMqkwAg"
+}
+[2025-06-07 07:06:06] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:06:06] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:06:06] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:06:06] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:06:06] 
+[2025-06-07 07:07:14] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:07:14] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:07:14] Mensaje del usuario: 'Como estas?'
+[2025-06-07 07:07:14] Prompt enviado a Gemini:
+[2025-06-07 07:07:14] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: Como estas?
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:07:14] Enviando petición a Gemini...
+[2025-06-07 07:07:15] Respuesta HTTP Code: 200
+[2025-06-07 07:07:15] Respuesta completa de Gemini:
+[2025-06-07 07:07:15] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -4.8277643145411275e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 63,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 65,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 63
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "IuVDaKqtNamSmecP-7i3wAQ"
+}
+[2025-06-07 07:07:15] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:07:15] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:07:15] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:07:15] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:07:15] 
+[2025-06-07 07:07:24] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:07:24] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:07:24] Mensaje del usuario: 'Dime una cita'
+[2025-06-07 07:07:24] Prompt enviado a Gemini:
+[2025-06-07 07:07:24] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: Dime una cita
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:07:24] Enviando petición a Gemini...
+[2025-06-07 07:07:24] Respuesta HTTP Code: 200
+[2025-06-07 07:07:24] Respuesta completa de Gemini:
+[2025-06-07 07:07:24] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -3.8747148209949955e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 63,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 65,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 63
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "LOVDaNXVEcWSmecPxte32AY"
+}
+[2025-06-07 07:07:24] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:07:24] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:07:24] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:07:24] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:07:24] 
+[2025-06-07 07:09:40] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:09:40] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:09:40] Mensaje del usuario: 'como estas?'
+[2025-06-07 07:09:40] Prompt enviado a Gemini:
+[2025-06-07 07:09:40] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: como estas?
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:09:40] Enviando petición a Gemini...
+[2025-06-07 07:09:40] Respuesta HTTP Code: 200
+[2025-06-07 07:09:40] Respuesta completa de Gemini:
+[2025-06-07 07:09:40] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -3.695541863635299e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 63,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 65,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 63
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "tOVDaOTgENaUmecPgtbdoQY"
+}
+[2025-06-07 07:09:40] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:09:40] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:09:40] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:09:40] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:09:40] 
+[2025-06-07 07:09:51] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:09:51] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:09:51] Mensaje del usuario: 'Dime una cita por favor'
+[2025-06-07 07:09:51] Prompt enviado a Gemini:
+[2025-06-07 07:09:51] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: Dime una cita por favor
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:09:51] Enviando petición a Gemini...
+[2025-06-07 07:09:51] Respuesta HTTP Code: 200
+[2025-06-07 07:09:51] Respuesta completa de Gemini:
+[2025-06-07 07:09:51] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -3.0396270176424878e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 65,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 67,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 65
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "v-VDaKeqHo-hmecPo_6MsAk"
+}
+[2025-06-07 07:09:51] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:09:51] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:09:51] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:09:51] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:09:51] 
+[2025-06-07 07:10:28] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:10:28] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:10:28] Mensaje del usuario: 'dime'
+[2025-06-07 07:10:28] Prompt enviado a Gemini:
+[2025-06-07 07:10:28] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: dime
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:10:28] Enviando petición a Gemini...
+[2025-06-07 07:10:28] Respuesta HTTP Code: 200
+[2025-06-07 07:10:28] Respuesta completa de Gemini:
+[2025-06-07 07:10:28] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -2.2053777684050146e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 61,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 63,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 61
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "5OVDaOL1LOeamecPs_GAmQc"
+}
+[2025-06-07 07:10:28] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:10:28] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:10:28] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:10:28] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:10:28] 
+[2025-06-07 07:10:37] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:10:37] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:10:37] Mensaje del usuario: 'dime una cita'
+[2025-06-07 07:10:37] Prompt enviado a Gemini:
+[2025-06-07 07:10:37] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: dime una cita
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:10:37] Enviando petición a Gemini...
+[2025-06-07 07:10:38] Respuesta HTTP Code: 200
+[2025-06-07 07:10:38] Respuesta completa de Gemini:
+[2025-06-07 07:10:38] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -3.8747148209949955e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 63,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 65,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 63
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "7eVDaLKHMd2XmecP-4jU4AY"
+}
+[2025-06-07 07:10:38] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:10:38] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:10:38] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:10:38] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:10:38] 
+[2025-06-07 07:12:36] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:12:36] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:12:36] Mensaje del usuario: 'que tal'
+[2025-06-07 07:12:36] Prompt enviado a Gemini:
+[2025-06-07 07:12:36] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: que tal
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:12:36] Enviando petición a Gemini...
+[2025-06-07 07:12:36] Respuesta HTTP Code: 200
+[2025-06-07 07:12:36] Respuesta completa de Gemini:
+[2025-06-07 07:12:36] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -2.6224251996609382e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 62,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 64,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 62
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "ZOZDaM2yB_yXmecP7ISugQs"
+}
+[2025-06-07 07:12:36] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:12:36] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:12:36] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:12:36] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:12:36] 
+[2025-06-07 07:12:43] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:12:43] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:12:43] Mensaje del usuario: 'dime una cita'
+[2025-06-07 07:12:43] Prompt enviado a Gemini:
+[2025-06-07 07:12:43] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: dime una cita
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:12:43] Enviando petición a Gemini...
+[2025-06-07 07:12:43] Respuesta HTTP Code: 200
+[2025-06-07 07:12:43] Respuesta completa de Gemini:
+[2025-06-07 07:12:43] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -3.8747148209949955e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 63,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 65,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 63
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "a-ZDaOrtIbP_ld8PvpS7-QU"
+}
+[2025-06-07 07:12:43] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:12:43] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:12:43] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:12:43] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:12:43] 
+[2025-06-07 07:16:20] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:16:20] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:16:20] Mensaje del usuario: 'dime'
+[2025-06-07 07:16:20] Prompt enviado a Gemini:
+[2025-06-07 07:16:20] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: dime
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:16:20] Enviando petición a Gemini...
+[2025-06-07 07:16:21] Respuesta HTTP Code: 200
+[2025-06-07 07:16:21] Respuesta completa de Gemini:
+[2025-06-07 07:16:21] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -2.2053777684050146e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 61,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 63,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 61
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "ROdDaMXWONaUmecPgtbdoQY"
+}
+[2025-06-07 07:16:21] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:16:21] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:16:21] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:16:21] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:16:21] 
+[2025-06-07 07:16:32] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:16:32] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:16:32] Mensaje del usuario: 'dime una cita'
+[2025-06-07 07:16:32] Prompt enviado a Gemini:
+[2025-06-07 07:16:32] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: dime una cita
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:16:32] Enviando petición a Gemini...
+[2025-06-07 07:16:32] Respuesta HTTP Code: 200
+[2025-06-07 07:16:32] Respuesta completa de Gemini:
+[2025-06-07 07:16:32] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -3.8747148209949955e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 63,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 65,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 63
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "UOdDaPqZBeeamecPs_GAmQc"
+}
+[2025-06-07 07:16:32] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:16:32] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:16:32] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:16:32] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:16:32] 
+[2025-06-07 07:17:28] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:17:28] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:17:28] Mensaje del usuario: 'hola que tal!'
+[2025-06-07 07:17:28] Prompt enviado a Gemini:
+[2025-06-07 07:17:28] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: hola que tal!
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:17:28] Enviando petición a Gemini...
+[2025-06-07 07:17:28] Respuesta HTTP Code: 200
+[2025-06-07 07:17:28] Respuesta completa de Gemini:
+[2025-06-07 07:17:28] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -3.695541863635299e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 64,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 66,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 64
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "iOdDaIPeJMWimecPztDp0Qo"
+}
+[2025-06-07 07:17:28] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:17:28] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:17:28] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:17:28] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:17:28] 
+[2025-06-07 07:17:35] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:17:35] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:17:35] Mensaje del usuario: 'dime una cita'
+[2025-06-07 07:17:35] Prompt enviado a Gemini:
+[2025-06-07 07:17:35] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: dime una cita
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:17:35] Enviando petición a Gemini...
+[2025-06-07 07:17:35] Respuesta HTTP Code: 200
+[2025-06-07 07:17:35] Respuesta completa de Gemini:
+[2025-06-07 07:17:35] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -3.8747148209949955e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 63,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 65,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 63
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "j-dDaPa0GfyXmecP7ISugQs"
+}
+[2025-06-07 07:17:35] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:17:35] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:17:35] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:17:35] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:17:35] 
+[2025-06-07 07:22:44] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:22:44] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:22:44] Mensaje del usuario: 'hola que tal'
+[2025-06-07 07:22:44] Prompt enviado a Gemini:
+[2025-06-07 07:22:44] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: hola que tal
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:22:44] Enviando petición a Gemini...
+[2025-06-07 07:22:45] Respuesta HTTP Code: 200
+[2025-06-07 07:22:45] Respuesta completa de Gemini:
+[2025-06-07 07:22:45] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -2.9204106795077678e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 63,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 65,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 63
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "xehDaNynAoqDm9IPyOPt4QQ"
+}
+[2025-06-07 07:22:45] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:22:45] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:22:45] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:22:45] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:22:45] 
+[2025-06-07 07:22:51] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:22:51] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:22:51] Mensaje del usuario: 'dime una cita'
+[2025-06-07 07:22:51] Prompt enviado a Gemini:
+[2025-06-07 07:22:51] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: dime una cita
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:22:51] Enviando petición a Gemini...
+[2025-06-07 07:22:51] Respuesta HTTP Code: 200
+[2025-06-07 07:22:51] Respuesta completa de Gemini:
+[2025-06-07 07:22:51] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -3.8747148209949955e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 63,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 65,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 63
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "y-hDaJH1B4qCsbQPhYjU2Qc"
+}
+[2025-06-07 07:22:51] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:22:51] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:22:51] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:22:51] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:22:51] 
+[2025-06-07 07:28:15] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:28:15] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:28:15] Mensaje del usuario: 'hola'
+[2025-06-07 07:28:15] Prompt enviado a Gemini:
+[2025-06-07 07:28:15] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: hola
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:28:15] Enviando petición a Gemini...
+[2025-06-07 07:28:16] Respuesta HTTP Code: 200
+[2025-06-07 07:28:16] Respuesta completa de Gemini:
+[2025-06-07 07:28:16] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -5.2448503993218765e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 61,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 63,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 61
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "D-pDaP2qN4CgmecPisLE-Aw"
+}
+[2025-06-07 07:28:16] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:28:16] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:28:16] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:28:16] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:28:16] 
+[2025-06-07 07:28:21] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:28:21] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:28:21] Mensaje del usuario: 'dime una cita'
+[2025-06-07 07:28:21] Prompt enviado a Gemini:
+[2025-06-07 07:28:21] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: dime una cita
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:28:21] Enviando petición a Gemini...
+[2025-06-07 07:28:21] Respuesta HTTP Code: 200
+[2025-06-07 07:28:21] Respuesta completa de Gemini:
+[2025-06-07 07:28:21] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -3.8747148209949955e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 63,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 65,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 63
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "FepDaJGwEuGimecPmsTQ-Ac"
+}
+[2025-06-07 07:28:21] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:28:21] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:28:21] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:28:21] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:28:21] 
+[2025-06-07 07:29:10] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:29:10] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:29:10] Mensaje del usuario: 'hola'
+[2025-06-07 07:29:10] Prompt enviado a Gemini:
+[2025-06-07 07:29:10] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: hola
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:29:10] Enviando petición a Gemini...
+[2025-06-07 07:29:10] Respuesta HTTP Code: 200
+[2025-06-07 07:29:10] Respuesta completa de Gemini:
+[2025-06-07 07:29:10] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -5.2448503993218765e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 61,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 63,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 61
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "RupDaIXhLbvP698Pvtbb4QY"
+}
+[2025-06-07 07:29:10] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:29:10] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:29:10] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:29:10] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:29:10] 
+[2025-06-07 07:29:17] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:29:17] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:29:17] Mensaje del usuario: 'dime una cita'
+[2025-06-07 07:29:17] Prompt enviado a Gemini:
+[2025-06-07 07:29:17] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: dime una cita
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:29:17] Enviando petición a Gemini...
+[2025-06-07 07:29:17] Respuesta HTTP Code: 200
+[2025-06-07 07:29:17] Respuesta completa de Gemini:
+[2025-06-07 07:29:17] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -3.8747148209949955e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 63,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 65,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 63
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "TepDaNDaGsmmnvgPmtKEuQM"
+}
+[2025-06-07 07:29:17] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:29:17] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:29:17] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:29:17] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:29:17] 
+[2025-06-07 07:36:39] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:36:39] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:36:39] Mensaje del usuario: 'que tal'
+[2025-06-07 07:36:39] Prompt enviado a Gemini:
+[2025-06-07 07:36:39] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: que tal
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:36:39] Enviando petición a Gemini...
+[2025-06-07 07:36:40] Respuesta HTTP Code: 200
+[2025-06-07 07:36:40] Respuesta completa de Gemini:
+[2025-06-07 07:36:40] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -2.6224251996609382e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 62,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 64,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 62
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "B-xDaL7oMoCgmecPisLE-Aw"
+}
+[2025-06-07 07:36:40] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:36:40] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:36:40] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:36:40] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:36:40] 
+[2025-06-07 07:36:46] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:36:46] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:36:46] Mensaje del usuario: 'dime una cita'
+[2025-06-07 07:36:46] Prompt enviado a Gemini:
+[2025-06-07 07:36:46] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: dime una cita
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:36:46] Enviando petición a Gemini...
+[2025-06-07 07:36:46] Respuesta HTTP Code: 200
+[2025-06-07 07:36:46] Respuesta completa de Gemini:
+[2025-06-07 07:36:46] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -3.8747148209949955e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 63,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 65,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 63
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "DuxDaISpD6mSmecP-7i3wAQ"
+}
+[2025-06-07 07:36:46] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:36:46] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:36:46] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:36:46] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:36:46] 
+[2025-06-07 07:40:31] === NUEVA EVALUACIÓN CON IA ===
+[2025-06-07 07:40:31] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-06-07 07:40:31] Mensaje del usuario: 'dime una cita'
+[2025-06-07 07:40:31] Prompt enviado a Gemini:
+[2025-06-07 07:40:31] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: dime una cita
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-06-07 07:40:31] Enviando petición a Gemini...
+[2025-06-07 07:40:32] Respuesta HTTP Code: 200
+[2025-06-07 07:40:32] Respuesta completa de Gemini:
+[2025-06-07 07:40:32] {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "false\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ],
+            "avgLogprobs": -3.8747148209949955e-6
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 63,
+        "candidatesTokenCount": 2,
+        "totalTokenCount": 65,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 63
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-1.5-flash",
+    "responseId": "7-xDaK3rNvKfmecP5rrZyQE"
+}
+[2025-06-07 07:40:32] Respuesta de la IA (original): 'false
+'
+[2025-06-07 07:40:32] Respuesta de la IA (procesada): 'false'
+[2025-06-07 07:40:32] RESULTADO FINAL: FALSE (condición NO se cumple)
+[2025-06-07 07:40:32] === FIN DE EVALUACIÓN ===
+[2025-06-07 07:40:32] 
+[2025-11-20 04:06:08] === NUEVA EVALUACIÓN CON IA ===
+[2025-11-20 04:06:08] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-11-20 04:06:08] Mensaje del usuario: 'test'
+[2025-11-20 04:06:08] Prompt enviado a Gemini:
+[2025-11-20 04:06:08] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: test
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-11-20 04:06:08] Enviando petición a Gemini...
+[2025-11-20 04:06:08] Respuesta HTTP Code: 0
+[2025-11-20 04:06:08] Error de cURL: SSL certificate problem: unable to get local issuer certificate
+[2025-11-20 04:06:52] === NUEVA EVALUACIÓN CON IA ===
+[2025-11-20 04:06:52] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-11-20 04:06:52] Mensaje del usuario: 'test'
+[2025-11-20 04:06:52] Prompt enviado a Gemini:
+[2025-11-20 04:06:52] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: test
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-11-20 04:06:52] Enviando petición a Gemini...
+[2025-11-20 04:06:53] Respuesta HTTP Code: 0
+[2025-11-20 04:06:53] Error de cURL: SSL certificate problem: unable to get local issuer certificate
+[2025-11-20 04:12:24] === NUEVA EVALUACIÓN CON IA ===
+[2025-11-20 04:12:24] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-11-20 04:12:24] Mensaje del usuario: 'test'
+[2025-11-20 04:12:24] Prompt enviado a Gemini:
+[2025-11-20 04:12:24] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: test
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-11-20 04:12:24] Enviando petición a Gemini...
+[2025-11-20 04:12:24] Respuesta HTTP Code: 0
+[2025-11-20 04:12:24] Error de cURL: SSL certificate problem: unable to get local issuer certificate
+[2025-11-20 04:12:36] === NUEVA EVALUACIÓN CON IA ===
+[2025-11-20 04:12:36] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-11-20 04:12:36] Mensaje del usuario: 'test'
+[2025-11-20 04:12:36] Prompt enviado a Gemini:
+[2025-11-20 04:12:36] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: test
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-11-20 04:12:36] Enviando petición a Gemini...
+[2025-11-20 04:12:36] Respuesta HTTP Code: 0
+[2025-11-20 04:12:36] Error de cURL: SSL certificate problem: unable to get local issuer certificate
+[2025-11-20 04:12:43] === NUEVA EVALUACIÓN CON IA ===
+[2025-11-20 04:12:43] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-11-20 04:12:43] Mensaje del usuario: 'test'
+[2025-11-20 04:12:43] Prompt enviado a Gemini:
+[2025-11-20 04:12:43] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: test
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-11-20 04:12:43] Enviando petición a Gemini...
+[2025-11-20 04:12:44] Respuesta HTTP Code: 0
+[2025-11-20 04:12:44] Error de cURL: SSL certificate problem: unable to get local issuer certificate
+[2025-11-20 04:16:37] === NUEVA EVALUACIÓN CON IA ===
+[2025-11-20 04:16:37] Condición a evaluar: 'el usuario menciona que tuvo un mal servicio o algo relacionado'
+[2025-11-20 04:16:37] Mensaje del usuario: 'test'
+[2025-11-20 04:16:37] Prompt enviado a Gemini:
+[2025-11-20 04:16:37] Evalúa la siguiente condición y responde SOLO con 'true' o 'false'.
+
+Condición a evaluar: el usuario menciona que tuvo un mal servicio o algo relacionado
+Mensaje del usuario: test
+
+Responde únicamente con 'true' si la condición se cumple o 'false' si no se cumple.
+[2025-11-20 04:16:37] Enviando petición a Gemini...
+[2025-11-20 04:16:37] Respuesta HTTP Code: 0
+[2025-11-20 04:16:37] Error de cURL: SSL certificate problem: unable to get local issuer certificate
