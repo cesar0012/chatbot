@@ -7,10 +7,14 @@ ini_set('display_errors', 0);
 ini_set('log_errors', 1);
 error_reporting(E_ALL);
 
+// Definir rutas de logs en /tmp para evitar problemas de permisos
+$debugLogFile = '/tmp/debug_log_waha.txt';
+$processLogFile = '/tmp/process_log_waha.txt';
+
 // --- INICIO CÓDIGO DE DEPURACIÓN ---
 $logContent = date('Y-m-d H:i:s') . " - Solicitud recibida (WAHA):\n";
 $logContent .= file_get_contents('php://input') . "\n------------------\n";
-file_put_contents('debug_log_waha.txt', $logContent, FILE_APPEND);
+file_put_contents($debugLogFile, $logContent, FILE_APPEND);
 // --- FIN CÓDIGO DE DEPURACIÓN ---
 
 // Recibir el payload JSON de Waha
@@ -26,7 +30,7 @@ $processLog .= "Evento recibido: $event\n";
 
 // Solo procesar mensajes
 if ($event !== 'message') {
-    file_put_contents('process_log_waha.txt', $processLog . "Evento ignorado\n", FILE_APPEND);
+    file_put_contents($processLogFile, $processLog . "Evento ignorado\n", FILE_APPEND);
     http_response_code(200);
     exit('OK');
 }
@@ -37,7 +41,7 @@ $payload = $data['payload'] ?? [];
 // Ignorar mensajes enviados por el bot
 if (isset($payload['fromMe']) && $payload['fromMe'] === true) {
     $processLog .= "Mensaje ignorado - fromMe: true\n";
-    file_put_contents('process_log_waha.txt', $processLog, FILE_APPEND);
+    file_put_contents($processLogFile, $processLog, FILE_APPEND);
     http_response_code(200);
     exit('OK');
 }
@@ -46,7 +50,7 @@ if (isset($payload['fromMe']) && $payload['fromMe'] === true) {
 $remoteJid = $payload['from'] ?? '';
 if (empty($remoteJid)) {
     $processLog .= "Mensaje ignorado - Sin remoteJid\n";
-    file_put_contents('process_log_waha.txt', $processLog, FILE_APPEND);
+    file_put_contents($processLogFile, $processLog, FILE_APPEND);
     http_response_code(200);
     exit('OK');
 }
@@ -62,7 +66,7 @@ if (isset($payload['body'])) {
 // Ignorar mensajes sin texto
 if (empty($userMessage)) {
     $processLog .= "Mensaje ignorado - Sin texto\n";
-    file_put_contents('process_log_waha.txt', $processLog, FILE_APPEND);
+    file_put_contents($processLogFile, $processLog, FILE_APPEND);
     http_response_code(200);
     exit('OK');
 }
@@ -72,7 +76,7 @@ $sessionId = preg_replace('/[^0-9]/', '', $remoteJid);
 
 $processLog .= "Procesando mensaje de $remoteJid (Session: $sessionId): $userMessage\n";
 
-// Instanciar servicios (necesitamos crear WahaService)
+// Instanciar servicios
 $wahaService = new WahaService();
 
 try {
@@ -94,7 +98,7 @@ try {
     $processLog .= "ERROR: " . $e->getMessage() . "\n";
 }
 
-file_put_contents('process_log_waha.txt', $processLog, FILE_APPEND);
+file_put_contents($processLogFile, $processLog, FILE_APPEND);
 
 http_response_code(200);
 echo 'OK';

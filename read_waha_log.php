@@ -1,8 +1,8 @@
 <?php
-echo "<h2>Log de Procesamiento de Waha</h2>";
+echo "<h2>Log de Procesamiento de Waha (desde /tmp)</h2>";
 
-$logFile = 'process_log_waha.txt';
-$debugFile = 'debug_log_waha.txt';
+$logFile = '/tmp/process_log_waha.txt';
+$debugFile = '/tmp/debug_log_waha.txt';
 
 echo "<h3>Últimos eventos (Process Log)</h3>";
 if (file_exists($logFile)) {
@@ -13,7 +13,7 @@ if (file_exists($logFile)) {
         echo "<textarea style='width:100%; height:300px; font-family:monospace; background:#f0f0f0;'>" . htmlspecialchars($content) . "</textarea>";
     }
 } else {
-    echo "<p style='color:red'>El archivo process_log_waha.txt NO existe todavía.</p>";
+    echo "<p style='color:red'>El archivo $logFile NO existe todavía.</p>";
 }
 
 echo "<h3>Payloads Recibidos (Debug Log)</h3>";
@@ -25,7 +25,7 @@ if (file_exists($debugFile)) {
         echo "<textarea style='width:100%; height:300px; font-family:monospace; background:#e0e0e0;'>" . htmlspecialchars($content) . "</textarea>";
     }
 } else {
-    echo "<p style='color:red'>El archivo debug_log_waha.txt NO existe todavía.</p>";
+    echo "<p style='color:red'>El archivo $debugFile NO existe todavía.</p>";
 }
 
 echo "<hr>";
