@@ -1,8 +1,8 @@
 <?php
-// Script para configurar Waha directamente por API (sin usar el Dashboard)
+// Script para configurar Waha directamente por API
 
 $wahaUrl = 'https://waha.neox.site';
-$apiKey = 'MiClaveSecreta2024'; // Cambia esto por tu WHATSAPP_API_KEY
+$apiKey = 'MiClaveSecreta2024';
 $sessionName = 'default';
 
 echo "<h1>Configuración de Waha por API</h1>";
@@ -41,43 +41,37 @@ echo "<pre>" . htmlspecialchars($response) . "</pre>";
 if ($httpCode == 201 || $httpCode == 200) {
     echo "<p style='color:green'>✅ Sesión creada exitosamente!</p>";
 
-    // 2. Obtener QR
+    // 2. Mostrar QR
     echo "<h2>2. Código QR para Escanear</h2>";
-    $qrUrl = "$wahaUrl/api/$sessionName/auth/qr";
+    echo "<p>Escanea este código QR con WhatsApp:</p>";
 
-    $ch = curl_init($qrUrl);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, [
-        'X-Api-Key: ' . $apiKey
-    ]);
+    // La URL directa de la imagen del QR
+    $qrImageUrl = "$wahaUrl/api/$sessionName/auth/qr";
+    echo "<img src='$qrImageUrl' alt='QR Code' style='max-width:400px; border:2px solid #333; padding:10px; background:white;'>";
 
-    $qrResponse = curl_exec($ch);
-    $qrHttpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    curl_close($ch);
+    echo "<p><small>Ve a WhatsApp > Configuración > Dispositivos vinculados > Vincular un dispositivo</small></p>";
 
-    if ($qrHttpCode == 200) {
-        $qrData = json_decode($qrResponse, true);
-        if (isset($qrData['qr'])) {
-            echo "<p>Escanea este código QR con WhatsApp:</p>";
-            echo "<img src='" . $qrData['qr'] . "' alt='QR Code' style='max-width:400px;'>";
-            echo "<p><small>Ve a WhatsApp > Configuración > Dispositivos vinculados > Vincular un dispositivo</small></p>";
-        } else {
-            echo "<p>Respuesta del QR:</p>";
-            echo "<pre>" . htmlspecialchars($qrResponse) . "</pre>";
-        }
-    } else {
-        echo "<p style='color:orange'>⚠️ No se pudo obtener el QR (HTTP $qrHttpCode)</p>";
-        echo "<pre>" . htmlspecialchars($qrResponse) . "</pre>";
-    }
+    echo "<hr>";
+    echo "<p><strong>Si el QR no se muestra correctamente:</strong></p>";
+    echo "<p>1. Ve al dashboard de Waha: <a href='https://waha.neox.site' target='_blank'>https://waha.neox.site</a></p>";
+    echo "<p>2. Busca la sesión 'default' y escanea el QR desde ahí</p>";
+
 } else {
     echo "<p style='color:red'>❌ Error al crear sesión</p>";
     if ($httpCode == 401) {
         echo "<p><strong>Error 401: API Key incorrecta.</strong></p>";
         echo "<p>Verifica que la variable WHATSAPP_API_KEY en Coolify sea: <code>$apiKey</code></p>";
+    } elseif ($httpCode == 409) {
+        echo "<p style='color:orange'>⚠️ La sesión ya existe. Ve al paso 2 para ver el QR.</p>";
+
+        echo "<h2>2. Código QR para Escanear</h2>";
+        $qrImageUrl = "$wahaUrl/api/$sessionName/auth/qr";
+        echo "<img src='$qrImageUrl' alt='QR Code' style='max-width:400px; border:2px solid #333; padding:10px; background:white;'>";
+        echo "<p><small>Ve a WhatsApp > Configuración > Dispositivos vinculados > Vincular un dispositivo</small></p>";
     }
 }
 
-// 3. Verificar estado de la sesión
+// 3. Verificar estado
 echo "<hr><h2>3. Estado de la Sesión</h2>";
 $statusUrl = "$wahaUrl/api/sessions";
 
@@ -93,4 +87,19 @@ curl_close($ch);
 
 echo "<p>Código HTTP: $statusHttpCode</p>";
 echo "<pre>" . htmlspecialchars($statusResponse) . "</pre>";
+
+if ($statusHttpCode == 200) {
+    $sessions = json_decode($statusResponse, true);
+    if (!empty($sessions)) {
+        foreach ($sessions as $session) {
+            if ($session['name'] == $sessionName) {
+                $status = $session['status'] ?? 'UNKNOWN';
+                echo "<p>Estado de la sesión '$sessionName': <strong>$status</strong></p>";
+                if ($status == 'WORKING') {
+                    echo "<p style='color:green'>✅ ¡WhatsApp conectado! Ya puedes enviar mensajes.</p>";
+                }
+            }
+        }
+    }
+}
 ?>
