@@ -1,6 +1,6 @@
 <?php
 require_once 'ChatCore.php';
-require_once 'WhatsAppService.php';
+require_once 'WahaService.php';
 
 // Configuración de errores para debugging
 ini_set('display_errors', 0);
