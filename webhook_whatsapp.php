@@ -20,15 +20,22 @@ $data = json_decode($json, true);
 // Log adicional para debugging
 $processLog = date('Y-m-d H:i:s') . " - Procesando: ";
 
-// Verificar si es un evento de mensaje
-if (!isset($data['type']) || $data['type'] !== 'MESSAGES_UPSERT') {
-    $processLog .= "Evento ignorado - Tipo: " . ($data['type'] ?? 'sin tipo') . "\n";
+// Verificar tipo de evento
+if (!isset($data['type'])) {
+    $processLog .= "Evento sin tipo recibido\n";
     file_put_contents('process_log.txt', $processLog, FILE_APPEND);
-    http_response_code(200);
-    exit('Evento ignorado');
+} else {
+    $processLog .= "Evento recibido: " . $data['type'] . "\n";
+    file_put_contents('process_log.txt', $processLog, FILE_APPEND);
 }
 
-$processLog .= "Evento MESSAGES_UPSERT recibido\n";
+// Si no es MESSAGES_UPSERT, terminamos aquí pero ya quedó registrado
+if (!isset($data['type']) || $data['type'] !== 'MESSAGES_UPSERT') {
+    http_response_code(200);
+    exit('Evento registrado pero ignorado (no es mensaje)');
+}
+
+$processLog .= "Evento MESSAGES_UPSERT confirmado\n";
 
 // Procesar mensajes
 if (isset($data['data']['messages'])) {
