@@ -1,0 +1,80 @@
+{
+    "name": "Cita de Autor",
+    "description": "",
+    "nodes": [
+        {
+            "id": 1,
+            "type": "start",
+            "posX": 105,
+            "posY": 153.328125,
+            "data": {
+                "name": "Inicio",
+                "description": "Punto de entrada del flujo"
+            }
+        },
+        {
+            "id": 2,
+            "type": "condition",
+            "posX": 273,
+            "posY": 97,
+            "data": {
+                "name": "Condici\u00f3n",
+                "condition_text": "dime una cita",
+                "condition_type": "contains",
+                "description": "",
+                "output_labels": [
+                    "Verdadero",
+                    "Falso"
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "type": "api_request",
+            "posX": 442,
+            "posY": 128,
+            "data": {
+                "name": "API Request",
+                "api_url": "https:\/\/httpbin.org\/get",
+                "api_method": "GET",
+                "api_headers": [],
+                "api_body": "",
+                "response_variable": "api_response_json"
+            }
+        },
+        {
+            "id": 4,
+            "type": "action",
+            "posX": 596,
+            "posY": 140,
+            "data": {
+                "name": "Acci\u00f3n",
+                "action_type": "message",
+                "action_content": "\u00a1Hola! Tu informaci\u00f3n:\n- IP: {{api_response_json.origin}}\n- Navegador: {{api_response_json.headers.User-Agent}}\n- Servidor consultado: {{api_response_json.headers.Host}}",
+                "description": ""
+            }
+        }
+    ],
+    "connections": [
+        {
+            "nodeSource": 1,
+            "nodeTarget": 2,
+            "outputSource": 0,
+            "inputTarget": 0
+        },
+        {
+            "nodeSource": 2,
+            "nodeTarget": 3,
+            "outputSource": 0,
+            "inputTarget": 0
+        },
+        {
+            "nodeSource": 3,
+            "nodeTarget": 4,
+            "outputSource": 0,
+            "inputTarget": 0
+        }
+    ],
+    "updated_at": "2025-06-07 07:37:21",
+    "active": true
+}

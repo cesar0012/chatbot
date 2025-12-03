@@ -1,0 +1,59 @@
+{
+    "name": "Agente",
+    "description": "",
+    "nodes": [
+        {
+            "id": 1,
+            "type": "start",
+            "posX": 89,
+            "posY": 85,
+            "data": {
+                "name": "Inicio",
+                "description": "Punto de entrada del flujo"
+            }
+        },
+        {
+            "id": 2,
+            "type": "condition",
+            "posX": 254,
+            "posY": 39,
+            "data": {
+                "name": "Condici\u00f3n",
+                "condition_text": "agente 11",
+                "condition_type": "contains",
+                "description": "",
+                "output_labels": [
+                    "Verdadero",
+                    "Falso"
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "type": "action",
+            "posX": 431,
+            "posY": 50,
+            "data": {
+                "name": "Acci\u00f3n",
+                "action_type": "redirect",
+                "action_content": "https:\/\/google.com"
+            }
+        }
+    ],
+    "connections": [
+        {
+            "nodeSource": 1,
+            "nodeTarget": 2,
+            "outputSource": 0,
+            "inputTarget": 0
+        },
+        {
+            "nodeSource": 2,
+            "nodeTarget": 3,
+            "outputSource": 0,
+            "inputTarget": 0
+        }
+    ],
+    "updated_at": "2025-06-07 06:07:10",
+    "active": true
+}

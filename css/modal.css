@@ -1,0 +1,328 @@
+/* Estilos para el modal del editor de flujos */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    position: relative;
+    background-color: #ffffff;
+    margin: 2% auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 1200px;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.close-modal:hover {
+    color: #333;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Estilos para el diagrama de flujo */
+.editor-container {
+    width: 100%;
+    height: 70vh;
+    background-color: #fafbff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+#drawflow {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #fafbff;
+    background-image: radial-gradient(rgba(74, 108, 247, 0.1) 1px, transparent 1px);
+    background-size: 25px 25px;
+}
+
+.node-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.node-item {
+    padding: 12px 18px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+}
+
+.node-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(76, 175, 80, 0.3);
+}
+
+.node-item.condition {
+    background-color: #4a6cf7;
+    box-shadow: 0 4px 12px rgba(74, 108, 247, 0.2);
+}
+
+.node-item.condition:hover {
+    box-shadow: 0 6px 15px rgba(74, 108, 247, 0.3);
+}
+
+.node-item.action {
+    background-color: #FF9800;
+    box-shadow: 0 4px 12px rgba(255, 152, 0, 0.2);
+}
+
+.node-item.action:hover {
+    box-shadow: 0 6px 15px rgba(255, 152, 0, 0.3);
+}
+
+.drawflow-node {
+    border-radius: 12px;
+    padding: 15px;
+    min-width: 220px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.drawflow-node:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.drawflow-node.condition {
+    background-color: #f0f4ff;
+    border: 2px solid #4a6cf7;
+}
+
+.drawflow-node.action {
+    background-color: #fff8f0;
+    border: 2px solid #FF9800;
+}
+
+.drawflow-node.start {
+    background-color: #f0fff5;
+    border: 2px solid #4CAF50;
+}
+
+.node-content {
+    padding: 15px;
+}
+
+.node-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 16px;
+}
+
+.node-form {
+    margin-top: 15px;
+}
+
+.node-form input, .node-form select, .node-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.node-form input:focus, .node-form select:focus, .node-form textarea:focus {
+    border-color: #4a6cf7;
+    box-shadow: 0 0 0 3px rgba(74, 108, 247, 0.15);
+    outline: none;
+}
+
+.outputs-label {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Botones de acción */
+.flow-actions {
+    margin-bottom: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(76, 175, 80, 0.3);
+}
+
+.btn.cancel {
+    background-color: #dc3545;
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.2);
+}
+
+.btn.cancel:hover {
+    background-color: #c82333;
+    box-shadow: 0 6px 15px rgba(220, 53, 69, 0.3);
+}
+
+/* Estilos para la lista de flujos */
+.flows-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.flow-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.flow-item:last-child {
+    border-bottom: none;
+}
+
+.flow-item:hover {
+    background-color: #fafbff;
+    transform: translateX(5px);
+}
+
+.flow-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.flow-icon {
+    font-size: 22px;
+    color: #4a6cf7;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(74, 108, 247, 0.1);
+    border-radius: 8px;
+}
+
+.flow-name {
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+}
+
+.flow-description {
+    color: #666;
+    font-size: 14px;
+}
+
+.flow-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.file-action {
+    padding: 5px 10px;
+    background-color: #2196F3;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.file-action.delete {
+    background-color: #f44336;
+}
+
+/* Estilos para la conexión de nodos */
+.connection {
+    stroke: #4CAF50;
+    stroke-width: 2px;
+}
+
+.connection.condition-true {
+    stroke: #4CAF50;
+}
+
+.connection.condition-false {
+    stroke: #f44336;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal {
+    animation: fadeIn 0.3s;
+}

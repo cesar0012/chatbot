@@ -1,0 +1,58 @@
+{
+    "name": "Plantas",
+    "description": "",
+    "nodes": [
+        {
+            "id": 1,
+            "type": "start",
+            "posX": 87.5,
+            "posY": 81.625,
+            "data": {
+                "name": "Inicio",
+                "description": "Punto de entrada del flujo"
+            }
+        },
+        {
+            "id": 2,
+            "type": "condition",
+            "posX": 428.5,
+            "posY": 111.625,
+            "data": {
+                "name": "Condici\u00f3n",
+                "condition_text": "planta",
+                "condition_type": "contains",
+                "output_labels": [
+                    "Verdadero",
+                    "Falso"
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "type": "action",
+            "posX": 847.5,
+            "posY": 158.625,
+            "data": {
+                "name": "Acci\u00f3n",
+                "action_type": "message",
+                "action_content": "las plantas son medicinales"
+            }
+        }
+    ],
+    "connections": [
+        {
+            "nodeSource": 1,
+            "nodeTarget": 2,
+            "outputSource": null,
+            "inputTarget": null
+        },
+        {
+            "nodeSource": 2,
+            "nodeTarget": 3,
+            "outputSource": null,
+            "inputTarget": null
+        }
+    ],
+    "updated_at": "2025-05-31 06:07:41",
+    "active": true
+}

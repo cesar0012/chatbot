@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir)",
+      "Bash(php -S localhost:8005)",
+      "Bash(php test_model.php)",
+      "Bash(del test_model.php)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

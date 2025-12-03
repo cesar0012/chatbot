@@ -1,0 +1,178 @@
+/* Estilos para el toggle switch animado */
+.flow-toggle-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.flow-toggle {
+    position: relative;
+    display: inline-block;
+    width: 37.5px;
+    height: 18px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.flow-toggle-checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.flow-toggle-switch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e0e0e0;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+.flow-toggle-switch:before {
+    position: absolute;
+    content: "";
+    height: 13.5px;
+    width: 13.5px;
+    left: 2.25px;
+    bottom: 2.25px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.flow-toggle-checkbox:checked + .flow-toggle-switch {
+    background-color: #4CAF50;
+}
+
+.flow-toggle-checkbox:checked + .flow-toggle-switch:before {
+    transform: translateX(19.5px);
+}
+
+.flow-toggle-checkbox:focus + .flow-toggle-switch {
+    box-shadow: 0 0 1px #4CAF50;
+}
+
+/* Animación adicional para el toggle */
+.flow-toggle-switch:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    border-radius: 18px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.flow-toggle-checkbox:checked + .flow-toggle-switch:after {
+    background-color: rgba(76, 175, 80, 0.2);
+    opacity: 1;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+}
+
+/* Estilos para el icono del flujo */
+.flow-icon {
+    transition: all 0.3s ease;
+}
+
+.flow-toggle-checkbox:checked ~ .flow-icon {
+    background-color: rgba(76, 175, 80, 0.1) !important;
+}
+
+.flow-toggle-checkbox:checked ~ .flow-icon i {
+    color: #4CAF50 !important;
+}
+
+/* Estilos para flujos inactivos */
+.flow-inactive {
+    opacity: 0.7;
+}
+
+/* Animación de activación */
+@keyframes activate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.flow-activating {
+    animation: activate 0.5s ease;
+}
+
+/* Indicador de carga para el toggle */
+.toggle-loading-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.toggle-loading-indicator:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4a6cf7;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+
+button.btn.btn-outline-primary.edit-flow-btn {
+    padding: 9px;
+    margin-right: 5px;
+    border-radius: 5px !important;
+}
+
+.btn-group i.fas.fa-edit {
+    margin-right: 0px;
+}
+
+button.btn.btn-outline-danger.delete-flow-btn {
+    background-color: #4a6cf7;
+    padding: 9px;
+    border-radius: 5px !important;
+}
+
+.btn-group i.fas.fa-trash {
+    margin-right: 0px;
+}

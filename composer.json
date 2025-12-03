@@ -1,0 +1,7 @@
+{
+    "name": "tu_usuario/tu_chatbot_app",
+    "description": "Mi aplicación chatbot PHP.",
+    "require": {
+        "php": ">=8.0" // O la versión de PHP que necesites
+    }
+}

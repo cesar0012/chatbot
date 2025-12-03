@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Visualización HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #3498db;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplos de Visualización HTML en el Chatbot</h1>
+    <p>Esta página contiene ejemplos de elementos HTML que ahora se pueden mostrar correctamente en el chatbot.</p>
+    
+    <div class="test-section">
+        <h2>Ejemplo de Tabla</h2>
+        <p>Copia y pega el siguiente código en el chatbot:</p>
+        <pre><code>```html
+&lt;table class="table table-striped"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Producto&lt;/th&gt;
+      &lt;th&gt;Descripción&lt;/th&gt;
+      &lt;th&gt;Precio&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Producto 1&lt;/td&gt;
+      &lt;td&gt;Descripción del producto 1&lt;/td&gt;
+      &lt;td&gt;$100.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Producto 2&lt;/td&gt;
+      &lt;td&gt;Descripción del producto 2&lt;/td&gt;
+      &lt;td&gt;$150.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Producto 3&lt;/td&gt;
+      &lt;td&gt;Descripción del producto 3&lt;/td&gt;
+      &lt;td&gt;$200.00&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+```</code></pre>
+        
+        <h3>Resultado esperado:</h3>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Descripción</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Producto 1</td>
+              <td>Descripción del producto 1</td>
+              <td>$100.00</td>
+            </tr>
+            <tr>
+              <td>Producto 2</td>
+              <td>Descripción del producto 2</td>
+              <td>$150.00</td>
+            </tr>
+            <tr>
+              <td>Producto 3</td>
+              <td>Descripción del producto 3</td>
+              <td>$200.00</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    
+    <div class="test-section">
+        <h2>Ejemplo de Lista</h2>
+        <p>Copia y pega el siguiente código en el chatbot:</p>
+        <pre><code>```html
+&lt;h3&gt;Lista de tareas pendientes:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Completar informe mensual&lt;/li&gt;
+  &lt;li&gt;Enviar correos a clientes&lt;/li&gt;
+  &lt;li&gt;Actualizar sitio web&lt;/li&gt;
+  &lt;li&gt;Programar reunión semanal&lt;/li&gt;
+&lt;/ul&gt;
+```</code></pre>
+        
+        <h3>Resultado esperado:</h3>
+        <h3>Lista de tareas pendientes:</h3>
+        <ul>
+          <li>Completar informe mensual</li>
+          <li>Enviar correos a clientes</li>
+          <li>Actualizar sitio web</li>
+          <li>Programar reunión semanal</li>
+        </ul>
+    </div>
+    
+    <div class="test-section">
+        <h2>Ejemplo con Imágenes y Enlaces</h2>
+        <p>Copia y pega el siguiente código en el chatbot:</p>
+        <pre><code>```html
+&lt;div&gt;
+  &lt;h3&gt;Recursos útiles:&lt;/h3&gt;
+  &lt;p&gt;Visita &lt;a href="https://www.ejemplo.com"&gt;nuestro sitio web&lt;/a&gt; para más información.&lt;/p&gt;
+  &lt;p&gt;También puedes consultar la &lt;a href="https://www.ejemplo.com/documentacion"&gt;documentación&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+```</code></pre>
+        
+        <h3>Resultado esperado:</h3>
+        <div>
+          <h3>Recursos útiles:</h3>
+          <p>Visita <a href="https://www.ejemplo.com">nuestro sitio web</a> para más información.</p>
+          <p>También puedes consultar la <a href="https://www.ejemplo.com/documentacion">documentación</a>.</p>
+        </div>
+    </div>
+    
+    <a href="chatbot.php" class="btn">Ir al Chatbot</a>
+</body>
+</html>

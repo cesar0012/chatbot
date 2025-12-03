@@ -1,0 +1,58 @@
+{
+    "name": "Test",
+    "description": "",
+    "nodes": [
+        {
+            "id": 1,
+            "type": "start",
+            "posX": 127.5,
+            "posY": 127.625,
+            "data": {
+                "name": "Inicio",
+                "description": "Punto de entrada del flujo"
+            }
+        },
+        {
+            "id": 2,
+            "type": "condition",
+            "posX": 501,
+            "posY": 114,
+            "data": {
+                "name": "Condici\u00f3n",
+                "condition_text": "el usuario menciona que tuvo un mal servicio o algo relacionado",
+                "condition_type": "ai",
+                "output_labels": [
+                    "Verdadero",
+                    "Falso"
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "type": "action",
+            "posX": 885,
+            "posY": 137,
+            "data": {
+                "name": "Acci\u00f3n",
+                "action_type": "message",
+                "action_content": "Levantaremos un reporte para solucionar ese problema"
+            }
+        }
+    ],
+    "connections": [
+        {
+            "nodeSource": 1,
+            "nodeTarget": 2,
+            "outputSource": 0,
+            "inputTarget": 0
+        },
+        {
+            "nodeSource": 2,
+            "nodeTarget": 3,
+            "outputSource": 0,
+            "inputTarget": 0
+        }
+    ],
+    "updated_at": "2025-05-31 06:28:07",
+    "active": true
+}
