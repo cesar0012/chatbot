@@ -133,23 +133,14 @@ if (!$sessionExists) {
     }
 }
 
-// Mostrar QR
+// Mostrar QR usando el proxy
 echo "<h2>2. Código QR para Escanear</h2>";
 echo "<p>Escanea este código QR con WhatsApp:</p>";
 
-$qrImageUrl = "$wahaUrl/api/$sessionName/auth/qr";
+// Usar el proxy para obtener el QR con autenticación
+$qrProxyUrl = "qr_proxy.php?session=$sessionName&t=" . time(); // Agregar timestamp para evitar cache
 echo "<div style='text-align:center; padding:20px; background:#f5f5f5;'>";
-echo "<img src='$qrImageUrl' alt='QR Code' style='max-width:400px; border:2px solid #333; padding:10px; background:white;' onerror=\"this.style.display='none'; document.getElementById('qr-error').style.display='block';\">";
-echo "<div id='qr-error' style='display:none; color:red;'>";
-echo "<p>❌ No se pudo cargar el QR</p>";
-echo "<p>Posibles razones:</p>";
-echo "<ul style='text-align:left; display:inline-block;'>";
-echo "<li>La sesión aún no está lista (espera 5 segundos y recarga)</li>";
-echo "<li>El QR expiró (haz clic en 'Reiniciar Sesión')</li>";
-echo "<li>Problema de autenticación con la API</li>";
-echo "</ul>";
-echo "<p><a href='?restart=1' style='background:orange; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;'>🔄 Reiniciar Sesión</a></p>";
-echo "</div>";
+echo "<img src='$qrProxyUrl' alt='QR Code' style='max-width:400px; border:2px solid #333; padding:10px; background:white;' id='qr-image'>";
 echo "</div>";
 
 echo "<p style='margin-top:20px;'><small>Ve a WhatsApp > Configuración > Dispositivos vinculados > Vincular un dispositivo</small></p>";
