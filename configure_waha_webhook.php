@@ -1,5 +1,5 @@
 <?php
-// Script para cambiar la URL del Webhook en Waha
+// Script para cambiar la URL del Webhook en Waha (Deteniendo sesión)
 
 $wahaUrl = 'https://waha.neox.site';
 $apiKey = 'MiClaveSecreta2024';
@@ -20,8 +20,30 @@ if (isset($_POST['webhook_url'])) {
     $newUrl = $_POST['webhook_url'];
     echo "<h2>Configurando: $newUrl ...</h2>";
 
-    $url = "$wahaUrl/api/sessions/$sessionName";
+    // 1. Detener sesión
+    echo "<p>1. Deteniendo sesión...</p>";
+    $ch = curl_init("$wahaUrl/api/sessions/$sessionName/stop");
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, ['X-Api-Key: ' . $apiKey]);
+    curl_exec($ch);
+    curl_close($ch);
+    sleep(2);
+
+    // 2. Eliminar sesión
+    echo "<p>2. Eliminando sesión para reconfigurar...</p>";
+    $ch = curl_init("$wahaUrl/api/sessions/$sessionName");
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'DELETE');
+    curl_setopt($ch, CURLOPT_HTTPHEADER, ['X-Api-Key: ' . $apiKey]);
+    curl_exec($ch);
+    curl_close($ch);
+    sleep(2);
+
+    // 3. Crear nueva sesión
+    echo "<p>3. Creando sesión con nuevo webhook...</p>";
     $data = [
+        'name' => $sessionName,
         'config' => [
             'webhooks' => [
                 [
@@ -32,9 +54,9 @@ if (isset($_POST['webhook_url'])) {
         ]
     ];
 
-    $ch = curl_init($url);
+    $ch = curl_init("$wahaUrl/api/sessions/start");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PATCH'); // Usamos PATCH para actualizar
+    curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
     curl_setopt($ch, CURLOPT_HTTPHEADER, [
         'Content-Type: application/json',
@@ -48,9 +70,10 @@ if (isset($_POST['webhook_url'])) {
     echo "<p>Código HTTP: $httpCode</p>";
     echo "<pre>" . htmlspecialchars($response) . "</pre>";
 
-    if ($httpCode == 200) {
-        echo "<p style='color:green'>✅ Webhook actualizado correctamente.</p>";
-        echo "<p><strong>¡Ahora envía un mensaje de prueba a WhatsApp!</strong></p>";
+    if ($httpCode == 201 || $httpCode == 200) {
+        echo "<p style='color:green'>✅ Webhook actualizado y sesión reiniciada.</p>";
+        echo "<p><strong>IMPORTANTE: Es posible que necesites escanear el QR de nuevo.</strong></p>";
+        echo "<p><a href='setup_waha.php' target='_blank' style='background:green; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;'>Ir a escanear QR</a></p>";
     } else {
         echo "<p style='color:red'>❌ Error al actualizar.</p>";
     }
