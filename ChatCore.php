@@ -59,7 +59,7 @@ class TinyDB
 
 class ChatCore
 {
-    private static $geminiApiKey = "AIzaSyD23m-ttYgegugSZhH3CjxYsc2EhYs02Mg"; // API Key de Gemini
+    private static $geminiApiKey = "AIzaSyC8IryVBBTgyhiKyjYpRY4JJ2hYsr-zvxE"; // API Key de Gemini
 
     public static function process($sessionId, $userMessage)
     {
