@@ -4,7 +4,7 @@
 $baseUrl = 'https://evolution.neox.site';
 $globalKey = '8CUSCumwgEJ43ydsEz1QB2kWNhxloneE';
 $instanceName = 'Chatbot';
-$webhookUrl = 'https://neoxygen2.com/chatbot/webhook_whatsapp.php';
+$webhookUrl = 'https://chatbot.neox.site/webhook_whatsapp.php';
 
 echo "<h2>Configurando Webhook para '$instanceName'...</h2>";
 

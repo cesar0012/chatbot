@@ -2,7 +2,7 @@
 // Script para simular una petición de Evolution API al webhook localmente
 // Esto nos ayudará a verificar si el webhook funciona correctamente cuando recibe datos.
 
-$webhookUrl = 'https://neoxygen2.com/chatbot/webhook_whatsapp.php'; // Ajusta la ruta si es necesario
+$webhookUrl = 'https://chatbot.neox.site/webhook_whatsapp.php'; // Ajusta la ruta si es necesario
 // Si estás en el mismo servidor, puedes intentar incluir el archivo directamente o usar cURL a localhost
 
 // Payload de ejemplo que enviaría Evolution API

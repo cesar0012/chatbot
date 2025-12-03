@@ -60,7 +60,7 @@ if ($resultWebhook['code'] == 200) {
         $currentUrl = $webhookData['webhook']['url'];
         echo "<p>URL Actual del Webhook: <strong>$currentUrl</strong></p>";
 
-        $expectedUrl = 'https://neoxygen2.com/chatbot/webhook_whatsapp.php';
+        $expectedUrl = 'https://chatbot.neox.site/webhook_whatsapp.php';
         if ($currentUrl === $expectedUrl) {
             echo "<p style='color:green'>✅ La URL del webhook coincide.</p>";
         } else {
