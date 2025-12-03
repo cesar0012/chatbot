@@ -13,11 +13,16 @@ $options = [
     'Internal Docker (Opción A)' => 'http://chatbot/webhook_waha.php',
     'Internal Docker (Opción B)' => 'http://chatbot:80/webhook_waha.php',
     'Internal Host (Opción C)' => 'http://host.docker.internal:2000/webhook_waha.php',
-    'Internal IP (Opción D)' => 'http://172.17.0.1:2000/webhook_waha.php'
+    'Internal IP (Opción D)' => 'http://172.17.0.1:2000/webhook_waha.php',
+    'Custom URL' => 'custom'
 ];
 
 if (isset($_POST['webhook_url'])) {
     $newUrl = $_POST['webhook_url'];
+    if ($newUrl === 'custom') {
+        $newUrl = $_POST['custom_url'];
+    }
+
     echo "<h2>Configurando: $newUrl ...</h2>";
 
     // 1. Detener sesión
@@ -80,16 +85,34 @@ if (isset($_POST['webhook_url'])) {
     echo "<hr>";
 }
 
-echo "<form method='post'>";
+echo "<form method='post' id='configForm'>";
 echo "<p>Selecciona una URL para probar:</p>";
-echo "<select name='webhook_url' style='padding:10px; width:100%; max-width:500px;'>";
+echo "<select name='webhook_url' id='webhook_url' onchange='toggleCustom()' style='padding:10px; width:100%; max-width:500px;'>";
 foreach ($options as $label => $val) {
     echo "<option value='$val'>$label - $val</option>";
 }
 echo "</select>";
+
+echo "<div id='customInput' style='display:none; margin-top:10px;'>";
+echo "<p>Ingresa tu URL personalizada (ej: URL de Coolify):</p>";
+echo "<input type='text' name='custom_url' placeholder='https://tu-app.coolify.app/webhook_waha.php' style='padding:10px; width:100%; max-width:500px;'>";
+echo "</div>";
+
 echo "<br><br>";
 echo "<button type='submit' style='padding:10px 20px; background:#007bff; color:white; border:none; border-radius:5px; cursor:pointer;'>Actualizar Webhook</button>";
 echo "</form>";
+
+echo "<script>
+function toggleCustom() {
+    var select = document.getElementById('webhook_url');
+    var customInput = document.getElementById('customInput');
+    if (select.value === 'custom') {
+        customInput.style.display = 'block';
+    } else {
+        customInput.style.display = 'none';
+    }
+}
+</script>";
 
 // Mostrar configuración actual
 echo "<h3>Configuración Actual en Waha:</h3>";
