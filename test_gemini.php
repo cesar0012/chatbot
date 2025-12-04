@@ -1,12 +1,12 @@
 <?php
 // Script para probar la API de Gemini directamente
 
-$apiKey = "AIzaSyC8IryVBBTgyhiKyjYpRY4JJ2hYsr-zvxE";
+$apiKey = "YOUR_API_KEY_HERE"; // Reemplazar con tu API key para testing local
 
 echo "<h1>Prueba de API de Gemini</h1>";
 
 // Probar con un mensaje simple
-$url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=" . $apiKey;
+$url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" . $apiKey;
 
 $data = [
     "contents" => [

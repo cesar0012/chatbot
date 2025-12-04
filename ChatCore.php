@@ -59,7 +59,21 @@ class TinyDB
 
 class ChatCore
 {
-    private static $geminiApiKey = "AIzaSyC8IryVBBTgyhiKyjYpRY4JJ2hYsr-zvxE"; // API Key de Gemini
+    private static $geminiApiKey = null; // Se cargará desde variable de entorno
+
+    private static function getApiKey()
+    {
+        if (self::$geminiApiKey === null) {
+            // Intentar obtener desde variable de entorno
+            self::$geminiApiKey = getenv('GEMINI_API_KEY');
+
+            // Si no está en variable de entorno, usar valor por defecto (solo para desarrollo local)
+            if (empty(self::$geminiApiKey)) {
+                self::$geminiApiKey = "YOUR_API_KEY_HERE"; // Reemplazar localmente, nunca subir a git
+            }
+        }
+        return self::$geminiApiKey;
+    }
 
     public static function process($sessionId, $userMessage)
     {
@@ -115,7 +129,7 @@ class ChatCore
         $prompt .= "Usuario: $userMessage\nAsistente:";
 
         // Procesar flujos de conversación si existen
-        $flowProcessor = new FlowProcessor($sessionId, self::$geminiApiKey);
+        $flowProcessor = new FlowProcessor($sessionId, self::getApiKey());
         $flowResult = $flowProcessor->processMessage($userMessage);
 
         $botResponse = '';
@@ -173,7 +187,7 @@ class ChatCore
 
     private static function callGemini($prompt)
     {
-        $url = "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash-preview-09-2025:generateContent?key=" . self::$geminiApiKey;
+        $url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" . self::getApiKey();
 
         $data = [
             "contents" => [

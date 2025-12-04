@@ -1,0 +1,10 @@
+# Variables de entorno sensibles
+.env
+
+# Archivos temporales
+/tmp/*
+*.log
+
+# Archivos de sesión
+conversation_*.json
+flow_state_*.json
